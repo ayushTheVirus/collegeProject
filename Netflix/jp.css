@@ -1,0 +1,426 @@
+:root {
+    --btnColor: rgb(193, 17, 25);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    /* border: 1px solid red; */
+    height: max(100vh, 800px);
+    background-image: url(Assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+
+.bg img {
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* navigation  */
+nav {
+    /* border: 2px solid blue; */
+    z-index: 10;
+    padding: 30px 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 140px;
+    z-index: 20;
+}
+
+nav .navRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 4px;
+}
+
+.lang {
+    background-color: transparent;
+    padding: 10px 27px;
+    z-index: 20;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}
+
+.navRight #sign {
+    background-color: red;
+    padding: 10px 15px;
+    z-index: 20;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+.navRight #sign:hover {
+    background: var(--btnColor);
+}
+
+/* navigation ends */
+
+
+#content {
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    height: calc(100% - 108px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 25;
+    gap: 15px;
+    text-align: center;
+}
+
+#content span {
+    z-index: 25;
+}
+
+#content span:first-child {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#content span:nth-child(2) {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content span:nth-child(2) {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.input input {
+    width: 310px;
+    height: 51px;
+    background-color: rgba(0, 0, 0, 0.249);
+    color: rgba(255, 255, 255, 0.802);
+    z-index: 40;
+    padding-left: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 5px;
+}
+
+.input .btn {
+    background-color: red;
+    z-index: 40;
+    color: white;
+    padding: 9px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    border: none;
+}
+
+.input .btn:hover {
+    background: var(--btnColor);
+}
+
+.seperation {
+    background-color: #232323;
+    height: 8px;
+}
+
+/* section of introduction */
+
+.first {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 90vw;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+.first>div {
+    /* border: 1px solid greenyellow; */
+    height: 100%;
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.first .secImg {
+    position: relative;
+    /* z-index: -1; */
+    /* border: 1px solid red; */
+}
+
+.first .secImg img {
+    /* border: 1px solid green; */
+    width: 35vw;
+    height: auto;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.secImg video {
+    width: 35vw;
+    position: absolute;
+    left: 0;
+    z-index: -2;
+}
+
+#secSecondImg {
+    width: 60vh;
+    z-index: -1;
+}
+
+#secThirdImg {
+    width: 40vw;
+    position: relative;
+}
+
+#secThirdVid {
+    width: 24vw;
+    position: absolute;
+    left: 86px;
+    top: 40px;
+}
+
+#secFourthImg {
+    width: 40vw;
+}
+
+
+
+/* FAQ */
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 30px;
+    /* height: 100vh; */
+
+}
+
+h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.mainQuestions {
+    width: 85vw;
+    margin: auto;
+    padding: 26px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #2d2d2d;
+    transition: 0.4s;
+}
+
+.mainQuestions:hover {
+    background-color: #414141;
+}
+
+.icon img {
+    width: 30px;
+    filter: invert();
+    cursor: pointer;
+}
+
+#input2 {
+    padding: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+footer {
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gridCol a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputbox {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+
+    /* font style management */
+    .badaFont, h1{
+        font-size: 32px;
+    }
+    .first > div :first-child{
+        font-size: 32px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .first > div :nth-child(2){
+        font-size: 20px;
+        text-align: center;
+        font-weight: 100;
+    }
+    .container .input input {
+        width: 250px;
+    }
+    .input .btn{
+        font-size: 18px;
+    }
+
+
+
+    /* INTRODUCTION SECTION */
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        gap: 20px;
+    }
+    .first div{
+        max-width: 80%; 
+    }
+    .first .secContent2{
+        padding: 12px;
+        width: 60vw;
+    }
+        
+    /* IMAGES OF INTRODUCTION SECTION */
+    #secFirstImg{
+        width: 55vw;
+        z-index: 1;
+    }
+    #secFirstVid{
+        width: 55vw;
+    }
+    #secSecondImg {
+        width: 55vw;
+        z-index: 1;
+    }
+    #secThirdImg{
+        width: 55vw;
+        z-index: 1;
+    }
+    #secThirdVid{
+        width: 36vw;
+        left: 43px;
+        z-index: -1;
+        top: 9px;
+    }
+    #secFourthImg{
+        width: 55vw;
+        z-index: 1;
+    }
+    
+    .secImg #secImgVid{
+        width: 70vw;
+        height: 100%;
+    }
+
+
+
+    /* FAQ SECTION */
+    .faq .mainQuestions{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
+    }
+    .inputbox {
+        width: 80%;
+        margin: auto;
+        row-gap: 10px;
+        justify-content: center;
+    }
+
+    /* Footer SECTION */
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+}
+
+
+aside{
+    color: rgba(255, 255, 255, 0.454);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
