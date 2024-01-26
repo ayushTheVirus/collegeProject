@@ -21,7 +21,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: -2;
+    z-index: 1;
 }
 
 .bg img {
@@ -34,18 +34,26 @@ body {
 }
 
 /* navigation  */
-nav {
-    /* border: 2px solid blue; */
+/* nav {
+     border: 2px solid blue;
     z-index: 10;
     padding: 30px 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+} */
 
+nav{
+    /* border: 2px solid blue; */
+    padding: 30px 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
 nav img {
     width: 140px;
     z-index: 20;
+    cursor: pointer;
 }
 
 nav .navRight {
@@ -54,6 +62,7 @@ nav .navRight {
     align-items: center;
     gap: 18px;
     padding: 4px;
+    z-index: 40;
 }
 
 .lang {
@@ -73,9 +82,9 @@ nav .navRight {
     color: white;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
     transition: 0.5s;
     border: none;
+    cursor: pointer;
 }
 
 .navRight #sign:hover {
@@ -94,13 +103,9 @@ nav .navRight {
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 25;
+    z-index: 5;
     gap: 15px;
     text-align: center;
-}
-
-#content span {
-    z-index: 25;
 }
 
 #content span:first-child {
@@ -123,6 +128,7 @@ nav .navRight {
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
+    z-index: 40;
 }
 
 .input input {
@@ -130,7 +136,7 @@ nav .navRight {
     height: 51px;
     background-color: rgba(0, 0, 0, 0.249);
     color: rgba(255, 255, 255, 0.802);
-    z-index: 40;
+    z-index: 2;
     padding-left: 10px;
     border: 1px solid rgba(255, 255, 255, 0.405);
     border-radius: 5px;
@@ -194,8 +200,6 @@ nav .navRight {
 
 .first .secImg {
     position: relative;
-    /* z-index: -1; */
-    /* border: 1px solid red; */
 }
 
 .first .secImg img {
@@ -266,6 +270,7 @@ h1 {
     font-weight: 400;
     background-color: #2d2d2d;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .mainQuestions:hover {
